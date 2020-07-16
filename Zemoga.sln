@@ -3,9 +3,60 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{EEC776FC-427C-4859-8DF0-47364923D400}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{77B3D319-22B1-4D36-BD62-585355999EA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{1483098C-20D0-4584-A642-43F2B2259F2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{7203B70E-E926-4D71-BC1C-321CE7024D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemoga.UI", "Zemoga.UI\Zemoga.UI.csproj", "{CD0DE1EA-4155-4A0B-96BC-4831F52AB2F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemoga.Domain", "Zemoga.Entities\Zemoga.Domain.csproj", "{47D0B676-4B4D-4A94-AEA5-9E2A293D5F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemoga.Data", "Zemoga.Data\Zemoga.Data.csproj", "{75926D9A-31CE-4056-9253-597D93313884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemoga.IoC", "Zemoga.IoC\Zemoga.IoC.csproj", "{534560A0-66D9-40C5-A034-4496C451AE6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemoga.App", "Zemoga.App\Zemoga.App.csproj", "{39A9D0CF-2063-465A-9414-A34C1A4B8EA9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD0DE1EA-4155-4A0B-96BC-4831F52AB2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0DE1EA-4155-4A0B-96BC-4831F52AB2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0DE1EA-4155-4A0B-96BC-4831F52AB2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0DE1EA-4155-4A0B-96BC-4831F52AB2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D0B676-4B4D-4A94-AEA5-9E2A293D5F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D0B676-4B4D-4A94-AEA5-9E2A293D5F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D0B676-4B4D-4A94-AEA5-9E2A293D5F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D0B676-4B4D-4A94-AEA5-9E2A293D5F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75926D9A-31CE-4056-9253-597D93313884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75926D9A-31CE-4056-9253-597D93313884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75926D9A-31CE-4056-9253-597D93313884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75926D9A-31CE-4056-9253-597D93313884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534560A0-66D9-40C5-A034-4496C451AE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534560A0-66D9-40C5-A034-4496C451AE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534560A0-66D9-40C5-A034-4496C451AE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534560A0-66D9-40C5-A034-4496C451AE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A9D0CF-2063-465A-9414-A34C1A4B8EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A9D0CF-2063-465A-9414-A34C1A4B8EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A9D0CF-2063-465A-9414-A34C1A4B8EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A9D0CF-2063-465A-9414-A34C1A4B8EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD0DE1EA-4155-4A0B-96BC-4831F52AB2F1} = {7203B70E-E926-4D71-BC1C-321CE7024D51}
+		{47D0B676-4B4D-4A94-AEA5-9E2A293D5F62} = {77B3D319-22B1-4D36-BD62-585355999EA1}
+		{75926D9A-31CE-4056-9253-597D93313884} = {1483098C-20D0-4584-A642-43F2B2259F2C}
+		{534560A0-66D9-40C5-A034-4496C451AE6A} = {1483098C-20D0-4584-A642-43F2B2259F2C}
+		{39A9D0CF-2063-465A-9414-A34C1A4B8EA9} = {EEC776FC-427C-4859-8DF0-47364923D400}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40F698B2-2F78-4813-8271-2ED974B63322}
