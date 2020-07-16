@@ -28,4 +28,14 @@
     <ProjectReference Include="..\Zemoga.IoC\Zemoga.IoC.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Update="Data\DB\Zemoga.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\DB\Zemoga_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

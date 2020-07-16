@@ -34,6 +34,7 @@ namespace Zemoga.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string path = System.IO.Directory.GetCurrentDirectory();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -43,13 +44,15 @@ namespace Zemoga.UI
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-           
+                    Configuration.GetConnectionString("DefaultConnection")
+                    .Replace("[DataDirectory]", path)
+                    ));
+            
             services.AddDbContext<BlogDbContext>(options =>
-            {
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("BlogConnection"));
-            });
+                    Configuration.GetConnectionString("BlogConnection")
+                    .Replace("[DataDirectory]", path)
+                    ));
 
             services.AddDefaultIdentity<IdentityUser>()
               .AddRoles<IdentityRole>()
